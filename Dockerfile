@@ -9,4 +9,5 @@ COPY /app .
 
 RUN pipenv install --system --deploy
 
-CMD ['flask', 'run']
+ENTRYPOINT ['python']
+CMD ['app.py']
