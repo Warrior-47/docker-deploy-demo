@@ -1,4 +1,4 @@
-FROM python3.10
+FROM python:3.10.10-alpine3.17
 
 ENV FLASK_APP=app \
     FLASK_DEBUG=true
