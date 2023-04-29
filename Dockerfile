@@ -9,5 +9,5 @@ COPY /app .
 
 RUN pipenv install --system --deploy
 
-ENTRYPOINT ['python']
+ENTRYPOINT ["python"]
 CMD ['app.py']
