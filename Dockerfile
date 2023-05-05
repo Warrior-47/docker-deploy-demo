@@ -5,9 +5,12 @@ ENV FLASK_APP=app \
 
 RUN pip install pipenv
 
-COPY /app .
+copy /app/Pipfile .
 
 RUN pipenv install --system --deploy
 
+COPY /app .
+
 ENTRYPOINT ["python"]
+
 CMD ["app.py"]
