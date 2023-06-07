@@ -13,8 +13,8 @@ USER me
 
 COPY /app .
 
-HEALTHCHECK CMD curl --fail http://localhost:3000 || exit 1
-
 ENTRYPOINT ["python"]
+
+HEALTHCHECK CMD curl --fail http://localhost:3000 || exit 1
 
 CMD ["app.py"]
