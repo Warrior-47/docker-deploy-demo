@@ -9,6 +9,8 @@ copy /app/Pipfile .
 
 RUN pipenv install --system --deploy
 
+USER me
+
 COPY /app .
 
 ENTRYPOINT ["python"]
